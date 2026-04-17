@@ -1,0 +1,86 @@
+*{
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+:root{
+     --cor-secundaria: #7d0707;
+     --cor-primaria: #000000;
+     --cor-branca:#ffffff;
+}
+
+
+.interface{
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+
+button{
+    background-color: var(--cor-secundaria);
+    border: 2px solid var(--cor-branca);
+    border-radius: 8px;
+    color:var(--cor-branca)
+    cursor: pointer;
+}
+
+
+button:hover{
+    background-color: var(--cor-primaria);
+    border: 2px solid var(--cor-primaria);
+    color: var(--cor-branca);
+}
+
+
+*/* estilo do cabeçalho */
+header{
+    background-color: var(--cor-secundaria);
+    padding: 16px 0;
+}
+
+
+header > .interface{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header .logotipo-cabecalho img{
+    width: 100px;
+    height: 100px;
+}
+
+
+header .menu-cabecalho ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 58px;
+}
+
+
+header nav.menu-cabecalho a{
+    text-decoration: none;
+    color: var(--cor-branca);
+    font-size: 1.1rem;
+    transition: .5s;
+}
+
+
+header nav.menu-cabecalho a:hover{
+    color: var(--cor-primaria);
+}
+
+header nav.menu-cabecalho button{
+    width: 144px;
+    height: 48px;
+}
+
+
+ 
+

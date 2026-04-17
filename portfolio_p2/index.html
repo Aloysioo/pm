@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio Profissional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menu de Navegação -->
+    <nav>
+        <div class="nav-container">
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre Mim</a>
+            <a href="#academico">Acadêmico</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </div>
+    </nav>
+
+    <!-- Seção Home com Foto na Esquerda -->
+    <header id="home" class="header-container">
+        <div class="header-content">
+            <div class="foto-perfil">
+                <!-- Substitua 'sua-foto.jpg' pelo nome do seu arquivo de imagem -->
+                <img src="imag 1.jpg" width="140" height="150"alt="Foto do Desenvolvedor">
+            </div>
+            <div class="header-text">
+                <!-- Procure a linha do H1 e deixe assim: -->
+<h1>Olá, eu me chamo <span id="typing-text"></span>Mirelly<span class="cursor">|</span></h1>
+                <p>Desenvolvedora em Formação & Estudante</p>
+                <a href="#contato" class="btn-contato">Entrar em contato</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção Sobre Mim -->
+    <section id="sobre" class="container">
+        <h2 class="section-title">Sobre Mim</h2>
+        <p>Me chamo Mirelly Aloysio, tenho 18 anos, sou uma programadora em formação e estudante da escola Jose Macedo Vieira, e estou cursando o meu Último ano do ensino médio, sou apaixonada pela fotografia.</p>
+   
+    <div class="video-container">
+        <video width="100%" controls>
+            <source src="atividade.mp4" type="video/mp4"><video width="50" height="100" controls></video>
+            Um pouco sobre mim.
+        </video>
+    </div>
+</section>
+
+
+    <!-- Seção Acadêmica (Abas) -->
+
+        <section id="academico" class="container">
+    <h2 class="section-title">Acadêmico</h2>
+   
+    <div class="tabs-container">
+        <button class="tab-btn active" onclick="abrirMateria(event, 'matematica')">Matemática</button>
+        <button class="tab-btn" onclick="abrirMateria(event, 'portugues')">Português</button>
+        <button class="tab-btn" onclick="abrirMateria(event, 'historia')">História</button>
+        <button class="tab-btn" onclick="abrirMateria(event, 'ingles')">Inglês</button>
+    </div>
+
+    <!-- MATEMÁTICA -->
+    <div id="matematica" class="tab-content active" style="position: relative;">
+        <div class="grade-anos">
+            <div class="card-ano" onclick="abrirDetalhes('mat1')"><span>1º Ano</span><p>Ver detalhes</p></div>
+            <div class="card-ano" onclick="abrirDetalhes('mat2')"><span>2º Ano</span><p>Ver detalhes</p></div>
+            <div class="card-ano" onclick="abrirDetalhes('mat3')"><span>3º Ano</span><p>Ver detalhes</p></div>
+        </div>
+        <div id="mat1" class="pagina-detalhes"><button class="btn-voltar" onclick="fecharDetalhes('mat1')">← Voltar</button><h3>Matemática - 1º Ano</h3><ul><li>Funções e Conjuntos</li><li>Progressões</li></ul></div>
+        <div id="mat2" class="pagina-detalhes"><button class="btn-voltar" onclick="fecharDetalhes('mat2')">← Voltar</button><h3>Matemática - 2º Ano</h3><ul><li>Geometria Espacial</li><li>Probabilidade</li></ul></div>
+        <div id="mat3" class="pagina-detalhes"><button class="btn-voltar" onclick="fecharDetalhes('mat3')">← Voltar</button><h3>Matemática - 3º Ano</h3><ul><li>Análise Combinatória</li><li>Geometria Analítica</li></ul></div>
+    </div>
+<div id="mat1" class="pagina-detalhes">
+    <button class="btn-voltar" onclick="fecharDetalhes('mat1')">← Voltar</button>
+    <h3>Matemática - 1º Ano</h3>
+    <ul>
+        <li><strong>Conjuntos:</strong> Operações, intervalos e diagramas.</li>
+        <li><strong>Funções:</strong> Domínio, imagem, funções de 1º e 2º grau.</li>
+        <li><strong>Exponenciais:</strong> Equações e funções de crescimento.</li>
+        <li><strong>Trigonometria:</strong> Relações no triângulo retângulo.</li>
+    </ul>
+</div>
+<div id="mat2" class="pagina-detalhes">
+    <button class="btn-voltar" onclick="fecharDetalhes('mat2')">← Voltar</button>
+    <h3>Matemática - 2º Ano</h3>
+    <ul>
+        <li><strong>Trigonometria:</strong> Funções seno, cosseno e ciclo trigonométrico.</li>
+        <li><strong>Geometria Espacial:</strong> Prismas, pirâmides, cilindros e esferas.</li>
+        <li><strong>Análise Combinatória:</strong> Fatorial, arranjo e combinação.</li>
+        <li><strong>Probabilidade:</strong> Eventos dependentes e independentes.</li>
+    </ul>
+</div>
+<div id="mat3" class="pagina-detalhes">
+    <button class="btn-voltar" onclick="fecharDetalhes('mat3')">← Voltar</button>
+    <h3>Matemática - 3º Ano</h3>
+    <ul>
+        <li><strong>Geometria Analítica:</strong> Ponto, reta e circunferência no plano.</li>
+        <li><strong>Números Complexos:</strong> Forma algébrica e trigonométrica.</li>
+        <li><strong>Polinômios:</strong> Operações e raízes de equações.</li>
+        <li><strong>Estatística:</strong> Média, moda, mediana e desvio padrão.</li>
+    </ul>
+</div>
+
+    <!-- PORTUGUÊS -->
+    <div id="portugues" class="tab-content" style="position: relative;">
+        <div class="grade-anos">
+            <div class="card-ano" onclick="abrirDetalhes('por1')"><span>1º Ano</span><p>Ver detalhes</p></div>
+            <div class="card-ano" onclick="abrirDetalhes('por2')"><span>2º Ano</span><p>Ver detalhes</p></div>
+            <div class="card-ano" onclick="abrirDetalhes('por3')"><span>3º Ano</span><p>Ver detalhes</p></div>
+        </div>
+        <div id="por1" class="pagina-detalhes"><button class="btn-voltar" onclick="fecharDetalhes('por1')">← Voltar</button><h3>Português - 1º Ano</h3><ul><li>Morfologia</li><li>Literatura Colonial</li></ul></div>
+        <div id="por2" class="pagina-detalhes"><button class="btn-voltar" onclick="fecharDetalhes('por2')">← Voltar</button><h3>Português - 2º Ano</h3><ul><li>Sintaxe</li><li>Realismo e Romantismo</li></ul></div>
+        <div id="por3" class="pagina-detalhes"><button class="btn-voltar" onclick="fecharDetalhes('por3')">← Voltar</button><h3>Português - 3º Ano</h3><ul><li>Gramática Aplicada</li><li>Modernismo</li></ul></div>
+    </div>
+<div id="por1" class="pagina-detalhes">
+    <button class="btn-voltar" onclick="fecharDetalhes('por1')">← Voltar</button>
+    <h3>Português - 1º Ano</h3>
+    <ul>
+        <li><strong>Linguagem:</strong> Funções da linguagem e variação linguística.</li>
+        <li><strong>Literatura:</strong> Quinhentismo, Barroco e Arcadismo.</li>
+        <li><strong>Gramática:</strong> Classes de palavras e acentuação.</li>
+    </ul>
+</div>
+<div id="por2" class="pagina-detalhes">
+    <button class="btn-voltar" onclick="fecharDetalhes('por2')">← Voltar</button>
+    <h3>Português - 2º Ano</h3>
+    <ul>
+        <li><strong>Literatura:</strong> Romantismo, Realismo e Naturalismo.</li>
+        <li><strong>Gramática:</strong> Sintaxe da oração e do período.</li>
+        <li><strong>Semântica:</strong> Figuras de linguagem e coesão textual.</li>
+    </ul>
+</div>
+<div id="por3" class="pagina-detalhes">
+    <button class="btn-voltar" onclick="fecharDetalhes('por3')">← Voltar</button>
+    <h3>Português - 3º Ano</h3>
+    <ul>
+        <li><strong>Literatura:</strong> Modernismo e Literatura Contemporânea.</li>
+        <li><strong>Gramática:</strong> Concordância, regência e uso da crase.</li>
+        <li><strong>Redação:</strong> Produção de texto dissertativo-argumentativo.</li>
+    </ul>
+</div>
+
+    <!-- HISTÓRIA -->
+    <div id="historia" class="tab-content" style="position: relative;">
+        <div class="grade-anos">
+            <div class="card-ano" onclick="abrirDetalhes('his1')"><span>1º Ano</span><p>Ver detalhes</p></div>
+            <div class="card-ano" onclick="abrirDetalhes('his2')"><span>2º Ano</span><p>Ver detalhes</p></div>
+            <div class="card-ano" onclick="abrirDetalhes('his3')"><span>3º Ano</span><p>Ver detalhes</p></div>
+        </div>
+        <div id="his1" class="pagina-detalhes"><button class="btn-voltar" onclick="fecharDetalhes('his1')">← Voltar</button><h3>História - 1º Ano</h3><ul><li>Antiguidade</li><li>Brasil Colônia</li></ul></div>
+        <div id="his2" class="pagina-detalhes"><button class="btn-voltar" onclick="fecharDetalhes('his2')">← Voltar</button><h3>História - 2º Ano</h3><ul><li>Revoluções Industriais</li><li>Brasil Império</li></ul></div>
+        <div id="his3" class="pagina-detalhes"><button class="btn-voltar" onclick="fecharDetalhes('his3')">← Voltar</button><h3>História - 3º Ano</h3><ul><li>Guerras Mundiais</li><li>Guerra Fria</li></ul></div>
+    </div>
+<div id="his1" class="pagina-detalhes">
+    <button class="btn-voltar" onclick="fecharDetalhes('his1')">← Voltar</button>
+    <h3>História - 1º Ano</h3>
+    <ul>
+        <li><strong>Antiguidade:</strong> Grécia, Roma e o nascimento da democracia.</li>
+        <li><strong>Idade Média:</strong> Feudalismo e Cruzadas.</li>
+        <li><strong>Brasil Colônia:</strong> Ciclo do açúcar e escravidão.</li>
+    </ul>
+</div>
+<div id="his2" class="pagina-detalhes">
+    <button class="btn-voltar" onclick="fecharDetalhes('his2')">← Voltar</button>
+    <h3>História - 2º Ano</h3>
+    <ul>
+        <li><strong>Revoluções:</strong> Francesa, Industrial e Americana.</li>
+        <li><strong>Brasil Império:</strong> Primeiro e Segundo Reinado.</li>
+        <li><strong>Iluminismo:</strong> O pensamento liberal e racionalista.</li>
+    </ul>
+</div>
+<div id="his3" class="pagina-detalhes">
+    <button class="btn-voltar" onclick="fecharDetalhes('his3')">← Voltar</button>
+    <h3>História - 3º Ano</h3>
+    <ul>
+        <li><strong>Guerras:</strong> Primeira e Segunda Guerra Mundial.</li>
+        <li><strong>Brasil República:</strong> Era Vargas, Ditadura e Redemocratização.</li>
+        <li><strong>Guerra Fria:</strong> Conflitos ideológicos e geopolítica moderna.</li>
+    </ul>
+</div>
+
+    <!-- INGLÊS -->
+    <div id="ingles" class="tab-content" style="position: relative;">
+        <div class="grade-anos">
+            <div class="card-ano" onclick="abrirDetalhes('ing1')"><span>1º Ano</span><p>Ver detalhes</p></div>
+            <div class="card-ano" onclick="abrirDetalhes('ing2')"><span>2º Ano</span><p>Ver detalhes</p></div>
+            <div class="card-ano" onclick="abrirDetalhes('ing3')"><span>3º Ano</span><p>Ver detalhes</p></div>
+        </div>
+        <div id="ing1" class="pagina-detalhes"><button class="btn-voltar" onclick="fecharDetalhes('ing1')">← Voltar</button><h3>Inglês - 1º Ano</h3><ul><li>Basic Grammar</li><li>Vocabulary</li></ul></div>
+        <div id="ing2" class="pagina-detalhes"><button class="btn-voltar" onclick="fecharDetalhes('ing2')">← Voltar</button><h3>Inglês - 2º Ano</h3><ul><li>Past Perfect</li><li>Relative Pronouns</li></ul></div>
+        <div id="ing3" class="pagina-detalhes"><button class="btn-voltar" onclick="fecharDetalhes('ing3')">← Voltar</button><h3>Inglês - 3º Ano</h3><ul><li>Phrasal Verbs</li><li>Text Interpretation</li></ul></div>
+    </div>
+    <div id="ing1" class="pagina-detalhes">
+    <button class="btn-voltar" onclick="fecharDetalhes('ing1')">← Voltar</button>
+    <h3>Inglês - 1º Ano</h3>
+    <ul>
+        <li><strong>Gramática:</strong> Verb to Be, Simple Present e Pronomes.</li>
+        <li><strong>Vocabulário:</strong> Família, rotina e cores.</li>
+        <li><strong>Leitura:</strong> Estratégias de leitura (Skimming/Scanning).</li>
+    </ul>
+</div>
+<div id="ing2" class="pagina-detalhes">
+    <button class="btn-voltar" onclick="fecharDetalhes('ing2')">← Voltar</button>
+    <h3>Inglês - 2º Ano</h3>
+    <ul>
+        <li><strong>Tempos Verbais:</strong> Past Simple, Present Perfect e Future.</li>
+        <li><strong>Conjunções:</strong> Linkers para estruturar frases.</li>
+        <li><strong>Comparativos:</strong> Graus de comparação entre adjetivos.</li>
+    </ul>
+</div>
+<div id="ing3" class="pagina-detalhes">
+    <button class="btn-voltar" onclick="fecharDetalhes('ing3')">← Voltar</button>
+    <h3>Inglês - 3º Ano</h3>
+    <ul>
+        <li><strong>Avançado:</strong> Passive Voice e Phrasal Verbs.</li>
+        <li><strong>Interpretação:</strong> Análise de letras de música e notícias.</li>
+        <li><strong>Foco ENEM:</strong> Interpretação de charges e textos críticos.</li>
+    </ul>
+</div>
+
+</section>
+
+   
+    <!-- Repita as divs 'pagina-detalhes' para mat2 e mat3 -->
+</div>
+
+    </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos" class="container">
+        <h2 class="section-title">Meus Projetos</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+       
+        <!-- Projeto 1 -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="img 2.jpeg"width="150" height="200" alt="Fotografia">
+            </div>
+            <div class="project-info">
+                <h3>fotografia</h3>
+                <p>Ensaio fotográfico, cobertura de eventos pequenos</p>
+                <a href="#" class="btn-projeto"></a>
+            </div>
+        </div>
+            </div>
+    </section>
+    <!-- Seção Contato -->
+    <section id="contato" class="container">
+        <h2 class="section-title">Contato</h2>
+        <p>E-mail: Meirealoysio63@gmail.com</p>
+        <p>Instagram: _aloysio</p>
+    </section>
+
+    <footer>
+        &copy; 2023 [Seu Nome] - Todos os direitos reservados.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio Profissional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menu de Navegação -->
+    <nav>
+        <div class="nav-container">
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre Mim</a>
+            <a href="#academico">Acadêmico</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </div>
+    </nav>
+
+    <!-- Seção Home com Foto na Esquerda -->
+    <header id="home" class="header-container">
+        <div class="header-content">
+            <div class="foto-perfil">
+                <!-- Substitua 'sua-foto.jpg' pelo nome do seu arquivo de imagem -->
+                <img src="images/eu.jpg" width="140" height="150"alt="Foto do Desenvolvedor">
+            </div>
+            <div class="header-text">
+                <!-- Procure a linha do H1 e deixe assim: -->
+<h1>Olá, eu me chamo <span id="typing-text"></span>Mirelly<span class="cursor">|</span></h1>
+                <p>Desenvolvedora em Formação & Estudante</p>
+                <a href="#contato" class="btn-contato">Entrar em contato</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção Sobre Mim -->
+    <section id="sobre" class="container">
+        <h2 class="section-title">Sobre Mim</h2>
+        <p>Me chamo Mirelly Aloysio, tenho 18 anos, sou uma programadora em formação e estudante da escola Jose Macedo Vieira, e estou cursando o meu Último ano do ensino médio, sou apaixonada pela fotografia.</p>
+   
+    <div class="video-container">
+        <video width="100%" controls>
+            <source src="atividade.mp4" type="video/mp4"><video width="50" height="100" controls></video>
+            Um pouco sobre mim.
+        </video>
+    </div>
+</section>
+
+
+    <!-- Seção Acadêmica (Abas) -->
+
+        <section id="academico" class="container">
+    <h2 class="section-title">Acadêmico</h2>
+   
+    <div class="tabs-container">
+        <button class="tab-btn active" onclick="abrirMateria(event, 'matematica')">Matemática</button>
+        <button class="tab-btn" onclick="abrirMateria(event, 'portugues')">Português</button>
+        <button class="tab-btn" onclick="abrirMateria(event, 'historia')">História</button>
+        <button class="tab-btn" onclick="abrirMateria(event, 'ingles')">Inglês</button>
+    </div>
+
+    <!-- MATEMÁTICA -->
+    <div id="matematica" class="tab-content active" style="position: relative;">
+        <div class="grade-anos">
+            <div class="card-ano" onclick="abrirDetalhes('mat1')"><span>1º Ano</span><p>Ver detalhes</p></div>
+            <div class="card-ano" onclick="abrirDetalhes('mat2')"><span>2º Ano</span><p>Ver detalhes</p></div>
+            <div class="card-ano" onclick="abrirDetalhes('mat3')"><span>3º Ano</span><p>Ver detalhes</p></div>
+        </div>
+        <div id="mat1" class="pagina-detalhes"><button class="btn-voltar" onclick="fecharDetalhes('mat1')">← Voltar</button><h3>Matemática - 1º Ano</h3><ul><li>Funções e Conjuntos</li><li>Progressões</li></ul></div>
+        <div id="mat2" class="pagina-detalhes"><button class="btn-voltar" onclick="fecharDetalhes('mat2')">← Voltar</button><h3>Matemática - 2º Ano</h3><ul><li>Geometria Espacial</li><li>Probabilidade</li></ul></div>
+        <div id="mat3" class="pagina-detalhes"><button class="btn-voltar" onclick="fecharDetalhes('mat3')">← Voltar</button><h3>Matemática - 3º Ano</h3><ul><li>Análise Combinatória</li><li>Geometria Analítica</li></ul></div>
+    </div>
+<div id="mat1" class="pagina-detalhes">
+    <button class="btn-voltar" onclick="fecharDetalhes('mat1')">← Voltar</button>
+    <h3>Matemática - 1º Ano</h3>
+    <ul>
+        <li><strong>Conjuntos:</strong> Operações, intervalos e diagramas.</li>
+        <li><strong>Funções:</strong> Domínio, imagem, funções de 1º e 2º grau.</li>
+        <li><strong>Exponenciais:</strong> Equações e funções de crescimento.</li>
+        <li><strong>Trigonometria:</strong> Relações no triângulo retângulo.</li>
+    </ul>
+</div>
+<div id="mat2" class="pagina-detalhes">
+    <button class="btn-voltar" onclick="fecharDetalhes('mat2')">← Voltar</button>
+    <h3>Matemática - 2º Ano</h3>
+    <ul>
+        <li><strong>Trigonometria:</strong> Funções seno, cosseno e ciclo trigonométrico.</li>
+        <li><strong>Geometria Espacial:</strong> Prismas, pirâmides, cilindros e esferas.</li>
+        <li><strong>Análise Combinatória:</strong> Fatorial, arranjo e combinação.</li>
+        <li><strong>Probabilidade:</strong> Eventos dependentes e independentes.</li>
+    </ul>
+</div>
+<div id="mat3" class="pagina-detalhes">
+    <button class="btn-voltar" onclick="fecharDetalhes('mat3')">← Voltar</button>
+    <h3>Matemática - 3º Ano</h3>
+    <ul>
+        <li><strong>Geometria Analítica:</strong> Ponto, reta e circunferência no plano.</li>
+        <li><strong>Números Complexos:</strong> Forma algébrica e trigonométrica.</li>
+        <li><strong>Polinômios:</strong> Operações e raízes de equações.</li>
+        <li><strong>Estatística:</strong> Média, moda, mediana e desvio padrão.</li>
+    </ul>
+</div>
+
+    <!-- PORTUGUÊS -->
+    <div id="portugues" class="tab-content" style="position: relative;">
+        <div class="grade-anos">
+            <div class="card-ano" onclick="abrirDetalhes('por1')"><span>1º Ano</span><p>Ver detalhes</p></div>
+            <div class="card-ano" onclick="abrirDetalhes('por2')"><span>2º Ano</span><p>Ver detalhes</p></div>
+            <div class="card-ano" onclick="abrirDetalhes('por3')"><span>3º Ano</span><p>Ver detalhes</p></div>
+        </div>
+        <div id="por1" class="pagina-detalhes"><button class="btn-voltar" onclick="fecharDetalhes('por1')">← Voltar</button><h3>Português - 1º Ano</h3><ul><li>Morfologia</li><li>Literatura Colonial</li></ul></div>
+        <div id="por2" class="pagina-detalhes"><button class="btn-voltar" onclick="fecharDetalhes('por2')">← Voltar</button><h3>Português - 2º Ano</h3><ul><li>Sintaxe</li><li>Realismo e Romantismo</li></ul></div>
+        <div id="por3" class="pagina-detalhes"><button class="btn-voltar" onclick="fecharDetalhes('por3')">← Voltar</button><h3>Português - 3º Ano</h3><ul><li>Gramática Aplicada</li><li>Modernismo</li></ul></div>
+    </div>
+<div id="por1" class="pagina-detalhes">
+    <button class="btn-voltar" onclick="fecharDetalhes('por1')">← Voltar</button>
+    <h3>Português - 1º Ano</h3>
+    <ul>
+        <li><strong>Linguagem:</strong> Funções da linguagem e variação linguística.</li>
+        <li><strong>Literatura:</strong> Quinhentismo, Barroco e Arcadismo.</li>
+        <li><strong>Gramática:</strong> Classes de palavras e acentuação.</li>
+    </ul>
+</div>
+<div id="por2" class="pagina-detalhes">
+    <button class="btn-voltar" onclick="fecharDetalhes('por2')">← Voltar</button>
+    <h3>Português - 2º Ano</h3>
+    <ul>
+        <li><strong>Literatura:</strong> Romantismo, Realismo e Naturalismo.</li>
+        <li><strong>Gramática:</strong> Sintaxe da oração e do período.</li>
+        <li><strong>Semântica:</strong> Figuras de linguagem e coesão textual.</li>
+    </ul>
+</div>
+<div id="por3" class="pagina-detalhes">
+    <button class="btn-voltar" onclick="fecharDetalhes('por3')">← Voltar</button>
+    <h3>Português - 3º Ano</h3>
+    <ul>
+        <li><strong>Literatura:</strong> Modernismo e Literatura Contemporânea.</li>
+        <li><strong>Gramática:</strong> Concordância, regência e uso da crase.</li>
+        <li><strong>Redação:</strong> Produção de texto dissertativo-argumentativo.</li>
+    </ul>
+</div>
+
+    <!-- HISTÓRIA -->
+    <div id="historia" class="tab-content" style="position: relative;">
+        <div class="grade-anos">
+            <div class="card-ano" onclick="abrirDetalhes('his1')"><span>1º Ano</span><p>Ver detalhes</p></div>
+            <div class="card-ano" onclick="abrirDetalhes('his2')"><span>2º Ano</span><p>Ver detalhes</p></div>
+            <div class="card-ano" onclick="abrirDetalhes('his3')"><span>3º Ano</span><p>Ver detalhes</p></div>
+        </div>
+        <div id="his1" class="pagina-detalhes"><button class="btn-voltar" onclick="fecharDetalhes('his1')">← Voltar</button><h3>História - 1º Ano</h3><ul><li>Antiguidade</li><li>Brasil Colônia</li></ul></div>
+        <div id="his2" class="pagina-detalhes"><button class="btn-voltar" onclick="fecharDetalhes('his2')">← Voltar</button><h3>História - 2º Ano</h3><ul><li>Revoluções Industriais</li><li>Brasil Império</li></ul></div>
+        <div id="his3" class="pagina-detalhes"><button class="btn-voltar" onclick="fecharDetalhes('his3')">← Voltar</button><h3>História - 3º Ano</h3><ul><li>Guerras Mundiais</li><li>Guerra Fria</li></ul></div>
+    </div>
+<div id="his1" class="pagina-detalhes">
+    <button class="btn-voltar" onclick="fecharDetalhes('his1')">← Voltar</button>
+    <h3>História - 1º Ano</h3>
+    <ul>
+        <li><strong>Antiguidade:</strong> Grécia, Roma e o nascimento da democracia.</li>
+        <li><strong>Idade Média:</strong> Feudalismo e Cruzadas.</li>
+        <li><strong>Brasil Colônia:</strong> Ciclo do açúcar e escravidão.</li>
+    </ul>
+</div>
+<div id="his2" class="pagina-detalhes">
+    <button class="btn-voltar" onclick="fecharDetalhes('his2')">← Voltar</button>
+    <h3>História - 2º Ano</h3>
+    <ul>
+        <li><strong>Revoluções:</strong> Francesa, Industrial e Americana.</li>
+        <li><strong>Brasil Império:</strong> Primeiro e Segundo Reinado.</li>
+        <li><strong>Iluminismo:</strong> O pensamento liberal e racionalista.</li>
+    </ul>
+</div>
+<div id="his3" class="pagina-detalhes">
+    <button class="btn-voltar" onclick="fecharDetalhes('his3')">← Voltar</button>
+    <h3>História - 3º Ano</h3>
+    <ul>
+        <li><strong>Guerras:</strong> Primeira e Segunda Guerra Mundial.</li>
+        <li><strong>Brasil República:</strong> Era Vargas, Ditadura e Redemocratização.</li>
+        <li><strong>Guerra Fria:</strong> Conflitos ideológicos e geopolítica moderna.</li>
+    </ul>
+</div>
+
+    <!-- INGLÊS -->
+    <div id="ingles" class="tab-content" style="position: relative;">
+        <div class="grade-anos">
+            <div class="card-ano" onclick="abrirDetalhes('ing1')"><span>1º Ano</span><p>Ver detalhes</p></div>
+            <div class="card-ano" onclick="abrirDetalhes('ing2')"><span>2º Ano</span><p>Ver detalhes</p></div>
+            <div class="card-ano" onclick="abrirDetalhes('ing3')"><span>3º Ano</span><p>Ver detalhes</p></div>
+        </div>
+        <div id="ing1" class="pagina-detalhes"><button class="btn-voltar" onclick="fecharDetalhes('ing1')">← Voltar</button><h3>Inglês - 1º Ano</h3><ul><li>Basic Grammar</li><li>Vocabulary</li></ul></div>
+        <div id="ing2" class="pagina-detalhes"><button class="btn-voltar" onclick="fecharDetalhes('ing2')">← Voltar</button><h3>Inglês - 2º Ano</h3><ul><li>Past Perfect</li><li>Relative Pronouns</li></ul></div>
+        <div id="ing3" class="pagina-detalhes"><button class="btn-voltar" onclick="fecharDetalhes('ing3')">← Voltar</button><h3>Inglês - 3º Ano</h3><ul><li>Phrasal Verbs</li><li>Text Interpretation</li></ul></div>
+    </div>
+    <div id="ing1" class="pagina-detalhes">
+    <button class="btn-voltar" onclick="fecharDetalhes('ing1')">← Voltar</button>
+    <h3>Inglês - 1º Ano</h3>
+    <ul>
+        <li><strong>Gramática:</strong> Verb to Be, Simple Present e Pronomes.</li>
+        <li><strong>Vocabulário:</strong> Família, rotina e cores.</li>
+        <li><strong>Leitura:</strong> Estratégias de leitura (Skimming/Scanning).</li>
+    </ul>
+</div>
+<div id="ing2" class="pagina-detalhes">
+    <button class="btn-voltar" onclick="fecharDetalhes('ing2')">← Voltar</button>
+    <h3>Inglês - 2º Ano</h3>
+    <ul>
+        <li><strong>Tempos Verbais:</strong> Past Simple, Present Perfect e Future.</li>
+        <li><strong>Conjunções:</strong> Linkers para estruturar frases.</li>
+        <li><strong>Comparativos:</strong> Graus de comparação entre adjetivos.</li>
+    </ul>
+</div>
+<div id="ing3" class="pagina-detalhes">
+    <button class="btn-voltar" onclick="fecharDetalhes('ing3')">← Voltar</button>
+    <h3>Inglês - 3º Ano</h3>
+    <ul>
+        <li><strong>Avançado:</strong> Passive Voice e Phrasal Verbs.</li>
+        <li><strong>Interpretação:</strong> Análise de letras de música e notícias.</li>
+        <li><strong>Foco ENEM:</strong> Interpretação de charges e textos críticos.</li>
+    </ul>
+</div>
+
+</section>
+
+   
+    <!-- Repita as divs 'pagina-detalhes' para mat2 e mat3 -->
+</div>
+
+    </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos" class="container">
+        <h2 class="section-title">Meus Projetos</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+       
+        <!-- Projeto 1 -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/eumi.jpg"width="150" height="200" alt="Fotografia">
+            </div>
+            <div class="project-info">
+                <h3>fotografia</h3>
+                <p>Ensaio fotográfico, cobertura de eventos pequenos</p>
+                <a href="#" class="btn-projeto"></a>
+            </div>
+        </div>
+            </div>
+    </section>
+    <!-- Seção Contato -->
+    <section id="contato" class="container">
+        <h2 class="section-title">Contato</h2>
+        <p>E-mail: Meirealoysio63@gmail.com</p>
+        <p>Instagram: _aloysio</p>
+    </section>
+
+    <footer>
+        &copy; 2023 [Seu Nome] - Todos os direitos reservados.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+ 
